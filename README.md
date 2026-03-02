@@ -1,2 +1,11 @@
-# abraham-web-projects
-My HTML/CSS/JS projects and practice – building toward Framer web design
+# Abraham Web Projects
+
+My beginner HTML & CSS practice projects.
+
+## Projects
+- **[CSS Tribute Page](./css-tribute-page/)** – Simple tribute page layout
+- **[CSS Survey Form](./css-survey-form/)** – Responsive survey form
+
+More projects coming from my 14-day skill sprint (Flexbox, JS, etc.)!
+
+Building modern websites with no-code tools like Framer.
