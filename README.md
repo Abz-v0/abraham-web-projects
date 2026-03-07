@@ -10,6 +10,7 @@ My beginner HTML & CSS practice projects.
 - **[Day 3: Transitions & Hover Effects](./day-3-transitions/)** – Smooth card hovers, span animations, bounce stagger
 - **[Day 4: Animations](./day-4-animations/)** – Keyframes fade-in stagger, bounce header, full hover effects (lift, scale, color), responsive on mobile
 - **[Day 5: Scroll Animations & JS](./day-5-scroll-js/)** – Scroll reveal, interactive loader with button click, first JS events & DOM manipulation
+- **[Day 6: Arrays & Loops](./day-6-arrays-loops/)** – First JS interactivity: array of colors, forEach loop, createElement, appendChild, DOM updates on click
 
 More projects coming from my 14-day skill sprint (Flexbox, JS, etc.)!
 
