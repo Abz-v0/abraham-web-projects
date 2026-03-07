@@ -9,6 +9,7 @@ My beginner HTML & CSS practice projects.
 - **[Day 2: Layout Structuring](./day-2-layout/)** – CSS Grid for multi-column layout + Flex in hero + mobile stacking
 - **[Day 3: Transitions & Hover Effects](./day-3-transitions/)** – Smooth card hovers, span animations, bounce stagger
 - **[Day 4: Animations](./day-4-animations/)** – Keyframes fade-in stagger, bounce header, full hover effects (lift, scale, color), responsive on mobile
+- **[Day 5: Scroll Animations & JS](./day-5-scroll-js/)** – Scroll reveal, interactive loader with button click, first JS events & DOM manipulation
 
 More projects coming from my 14-day skill sprint (Flexbox, JS, etc.)!
 
