@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - Arrays & Loops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Day 6: Arrays & Loops</h1>
+        <p>Click the button to change colors</p>
+    </header>
+
+    <main>
+        <button id="changeColor">Change colors</button>
+
+        <div id="colorBoxes">
+            <!--- Js will add boxes here --->
+        </div>
+
+        <p id="message">Click the button to see magic!</p>
+    </main>
+
+    <script>
+        const colors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96c93d", "#feca57"];
+        
+        const button = document.getElementById('changeColor');
+        const container = document.getElementById('colorBoxes');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', function() {
+            container.innerHTML = '';
+
+        colors.forEach(function(color) {
+            const box = document.createElement('div');
+
+            box.classList.add('color-box');
+
+            box.style.backgroundColor = color;
+
+            container.appendChild(box);
+        });
+
+
+        message.textContent = 'Colors changed! ' + colors.length + ' boxes created 🎉';
+        message.style.color = '#3b82f6';
+        });
+    </script>
+    
+</body>
+</html>
