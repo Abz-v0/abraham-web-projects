@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Scroll Animations & Loaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Day 5: Scroll & Load</h1>
+        <p>Scroll down to see elements reveal</p>
+    </header>
+
+    <main>
+        <section class="reveal">
+            <h2>Section 1</h2>
+            <p>Content fades and slides on scroll</p>
+        </section>
+
+         <section class="reveal">
+            <h2>Section 2</h2>
+            <p>Another section that appears smoothly</p>
+        </section>
+
+        
+         <section class="reveal">
+            <h2>Section 3</h2>
+            <p>More content that reveals on scroll</p>
+        </section>
+
+        <button id="showLoader">Show loader</button>
+        <div class="loader-container">
+            <div class="loader"></div>
+            <p>Loading your next site...</p>
+        </div>
+    </main>
+
+    <script>
+        // Select all sections with class "reveal"
+        const reveals = document.querySelectorAll('.reveal');
+
+        // Creates an observer that watches elements entering the viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If the section is visible (intersecting)
+                if (entry.isIntersecting) {
+                    // Add 'active' class to trigger CSS animations
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        // Watch each reveal section
+        reveals.forEach(reveal => {
+            observer.observe(reveal);
+
+        });
+
+        document.getElementById('showLoader').addEventListener('click', () => {
+            const loader = document.querySelector('.loader-container');
+            loader.style.display = 'block';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 3000);
+        }); 
+    </script>
+</body>
+</html>
