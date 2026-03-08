@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+   <div class="page-container">
+        <header>
         <h1>Day 7: Conditionals</h1>
         <p>Try the interactive checker below</p>
     </header>
@@ -15,12 +16,15 @@
     <main>
         <section>
             <h2>Age checker</h2>
+           <div class="input-group">
             <input type="number" id="ageInput" placeholder="Enter your age">
             <button id="checkAge">Check</button>
+           </div>
             <p id="ageResult"></p>
             <button id="resetBtn">Reset</button>
         </section>
     </main>
+   </div>
 
     <script>
         const button = document.getElementById('checkAge');
@@ -60,4 +64,5 @@
         });
     </script>
 </body>
+
 </html>
