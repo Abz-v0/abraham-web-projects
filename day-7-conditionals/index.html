@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - Conditionals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Day 7: Conditionals</h1>
+        <p>Try the interactive checker below</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Age checker</h2>
+            <input type="number" id="ageInput" placeholder="Enter your age">
+            <button id="checkAge">Check</button>
+            <p id="ageResult"></p>
+            <button id="resetBtn">Reset</button>
+        </section>
+    </main>
+
+    <script>
+        const button = document.getElementById('checkAge');
+        const input = document.getElementById('ageInput');
+        const result = document.getElementById('ageResult');
+
+        button.addEventListener('click', function() {
+            const age = Number(input.value);
+
+            if (age === '' || isNaN(age)) {
+                result.textContent = 'Please enter valid age!';
+                result.style.color = 'red';
+            }
+
+            else if (age >= 18) {
+                result.textContent = "You're old enough to vote and drive! 🚗🗳️";
+                result.style.color = 'green';
+            }
+
+            else if (age >= 13) {
+                result.textContent = "Teen zone! 🎮";
+                result.style.color = 'orange';
+            }
+
+            else {
+                result.textContent = "You're still a kiddo! 🧸";
+                result.style.color = 'blue';
+            }
+
+            input.value = "";
+
+            document.getElementById('resetBtn').addEventListener('click', function() {
+                input.value = ''
+                result.textContent = ''
+                result.style.color = '#333'
+            })
+        });
+    </script>
+</body>
+</html>
