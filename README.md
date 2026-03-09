@@ -11,7 +11,8 @@ My beginner HTML & CSS practice projects.
 - **[Day 4: Animations](./day-4-animations/)** – Keyframes fade-in stagger, bounce header, full hover effects (lift, scale, color), responsive on mobile
 - **[Day 5: Scroll Animations & JS](./day-5-scroll-js/)** – Scroll reveal, interactive loader with button click, first JS events & DOM manipulation
 - **[Day 6: Arrays & Loops](./day-6-arrays-loops/)** – First JS interactivity: array of colors, forEach loop, createElement, appendChild, DOM updates on click
-- **[Day 7: Conditionals](./day-7-conditionals/)** – JS if/else, input validation, dynamic feedback + colors (live: [your Pages URL])
+- **[Day 7: Conditionals](./day-7-conditionals/)** – JS if/else, input validation, dynamic feedback + colors
+- **[Day 8: Loops & Counter](./day-8-loops-counter/)** – JS for loops (`forEach`), button counter project with dynamic messages & milestones (click to increase number + fun feedback)
 
 More projects coming from my 14-day skill sprint (Flexbox, JS, etc.)!
 
