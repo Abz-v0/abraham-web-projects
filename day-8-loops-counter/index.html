@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Loops & Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Day 8: Loops & Counter</h1>
+        <p>Click the button — watch the number grow!</p>
+    </header>
+
+    <main>
+        <div class="counter-box">
+            <h2 id="count">0</h2>
+            <button id="incrementBtn">+1</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <p id="funMessage">Keep clicking...</p>
+    </main>
+
+    <script>
+        const countDisplay = document.getElementById('count');
+        const incrementBtn = document.getElementById('incrementBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const message = document.getElementById('funMessage');
+
+        let count = 0;
+
+        incrementBtn.addEventListener('click', function() {
+            count = count + 1;
+            countDisplay.textContent = count;
+
+            if (count === 10) {
+                message.textContent = "Double digits! You're on fire 🔥";
+                message.style.color = '#ef4444';
+            } else if (count === 50) {
+                message.textContent = "Half century! Legend status 🏆";
+                message.style.color = '#10b981';
+            } else if (count >= 100) {
+                message.textContent = "You're unstoppable! 🚀";
+                message.style.color = '#8b5cf6';
+            } else {
+                message.textContent = "Keep going...";
+                message.style.color = '#555';
+            }
+        });
+
+        resetBtn.addEventListener('click', function() {
+            count = 0;
+            countDisplay.textContent = count;
+            message.textContent = "Back to zero — let's go again!";
+            message.style.color = '#555';
+        })
+    </script>
+
+</body>
+</html>
