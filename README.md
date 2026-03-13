@@ -14,6 +14,7 @@ My beginner HTML & CSS practice projects.
 - **[Day 7: Conditionals](./day-7-conditionals/)** – JS if/else, input validation, dynamic feedback + colors
 - **[Day 8: Loops & Counter](./day-8-loops-counter/)** – JS for loops (`forEach`), button counter project with dynamic messages & milestones (click to increase number + fun feedback)
 - **[Day 9: Todo List](./day-9-todo-list/).** - Todo list with array of objects, forEach render, toggle complete, delete, dynamic count
+- **[Day 10-11 Recap](./day-10-11-recap/)** – Drills reinforcing button events, arrays, conditionals, DOM manipulation, and mini interactive projects (age checker, name cards, password checker, counter)
 
 More projects coming from my 14-day skill sprint (Flexbox, JS, etc.)!
 
