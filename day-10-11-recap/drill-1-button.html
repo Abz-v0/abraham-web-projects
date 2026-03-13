@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1 - Button Magic</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; text-align: center;  padding: 4rem; background: #f0f9ff;}
+        button {
+            cursor: pointer;
+            background: #00d4ff;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 1rem;
+            transition: all 0.3s ease;
+        }
+        button:active {transform: scale(0.98);}
+        #result {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drill 1</h1>
+    <button id="magicBtn">Click me 5 times</button>
+    <p id="result">Clicks: 0</p>
+
+    <script>
+        const magicBtn = document.getElementById('magicBtn');
+        const result = document.getElementById('result');
+
+        let count = 0;
+        magicBtn.addEventListener('click', function() {
+            count = count + 1;
+            result.textContent = count;
+
+            if(count === 5) {
+                result.textContent = "You're a legend! 🔥";
+                result.style.color = "green";
+            }
+        })
+    </script>
+</body>
+</html>

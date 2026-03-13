@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2 - Name Cards</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2rem;
+            background: #f0fdfa;
+        }
+        .container {
+            background: white; 
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 200px;
+        }
+
+        .card {
+                background: white;
+                padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drill 2 - Name Cards</h1>
+    <div id="cards" class="container"></div>
+
+    <script>
+        const names = ["Abz", "Ceaser", "Brayden", "Mustopha", "Tensai"];
+
+        const container = document.getElementById("cards");
+
+        names.forEach(function(name) {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            card.textContent = name;
+
+            container.appendChild(card);
+        });
+    </script>
+</body>
+</html>

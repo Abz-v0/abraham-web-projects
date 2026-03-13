@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 4 - Recap counter</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f0f4f5;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            margin: 1rem 2rem;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        button {
+            margin: 0.5rem 0.2rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        #incrementBtn:hover {
+            background: rgb(0, 208, 255);
+            color: white;
+        }
+
+        #resetBtn:hover {
+            background: rgb(255, 47, 0);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="count">0</h1>
+        <button id="incrementBtn">Click Me</button>
+        <button id="resetBtn">Reset</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        const countDisplay = document.getElementById('count');
+        const increment = document.getElementById('incrementBtn');
+        const reset = document.getElementById('resetBtn');
+        const message = document.getElementById('message');
+
+        let count = 0;
+
+        increment.addEventListener('click', function() {
+           count = count + 1;
+           countDisplay.textContent = count;
+
+           if (count === 10) {
+                message.textContent = "Nice! Double digits 🎉";
+                message.style.color = 'green';
+           }
+
+           else if (count === 25) {
+            message.textContent = "You're unstoppable! 🚀";
+            message.style.color = 'purple';
+           }
+
+           else if (count === 50) {
+            message.textContent = "Half century legend 🏆";
+            message.style.color = 'gold';
+           }
+
+           else {
+            message.textContent = "Keep Going...";
+            message.style.color = "#ccc"
+           }
+        })
+
+        reset.addEventListener('click', function() {
+            count = 0;
+            countDisplay.textContent = count;
+        })
+    </script>
+</body>
+</html>
