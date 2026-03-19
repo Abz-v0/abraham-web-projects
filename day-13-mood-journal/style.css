@@ -1,0 +1,232 @@
+* {
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1e40af;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+input {
+    flex: 1;
+    padding: 1rem 1.4rem;
+    font-size: 1.1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 12px;
+    outline: none;
+    background: #ffffff;
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button {
+    padding: 0.9rem 1.8rem;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease;
+}
+
+input:focus,
+button:hover,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.25);
+    transform: translateY(-1px) scale(1.015);
+}
+
+button:active {
+    transform: scale(0.96) translateY(1px);
+}
+
+#saveMood {
+    padding: 1rem 2.2rem;
+    font-size: 1.1rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#saveMood:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+#saveMood:active {
+    transform: scale(0.96) translateY(1px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 1rem;
+    background: #f1f5f9;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+li:hover{
+    transform: translateY(-5px) scale(1.015);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.14);
+    background: #f8fafc;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.18);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+#stats {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: #475569;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;               /* round icon button */
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.delete-btn:hover {
+    transform: scale(1.18) rotate(10deg);
+    box-shadow: 0 4px 12px rgba(239,68,68,0.4);
+    opacity: 0.92;
+}
+
+.delete-btn:active {
+    transform: scale(0.88) rotate(0deg);
+
+    box-shadow: 0 2px 8px rgba(239,68,68,0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button,
+li,
+input {
+    transition: all 0.25s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0); }
+    20%, 60% {transform: translateX(-8px); }
+    40%, 80% {transform: translateX(8px); }
+}
+
+.shake {
+    animation: shake 0.6s ease-in-out;
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.22) !important;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+        margin: 0.5rem;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    button {
+        font-weight: 600;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.15rem;
+    }
+
+    li {
+        padding: 1.1rem 0.8rem;
+        font-size: 1.05rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .delete-btn {
+        align-self: flex-end;
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
+    }
+
+    #stats {
+        font-size: 1.1rem;
+    }
+}
