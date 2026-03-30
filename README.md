@@ -17,7 +17,34 @@ My beginner HTML & CSS practice projects.
 - **[Day 10-11 Recap](./day-10-11-recap/)** – Drills reinforcing button events, arrays, conditionals, DOM manipulation, and mini interactive projects (age checker, name cards, password checker, counter)
 - **[Day 12: Todo List with localStorage](./day-12-localstorage-todo/)** – Persistent todo list using localStorage, save/load, render loop, toggle/delete
 - **[Day 13: Mood Journal](./day-13-mood-journal/)** – JS mood tracker: add with timestamp, delete (Font Awesome icon), keyword colors, localStorage, fade-in animation
+- # Day 14 - Wisdom of the Ancients
 
-More projects coming from my 14-day skill sprint (Flexbox, JS, etc.)!
+A beautiful interactive quote generator with an ancient temple aesthetic.
 
-Building modern websites with no-code tools like Framer.
+## Features
+- Random historical wisdom from 30+ sages (Socrates, Marcus Aurelius, Buddha, Mandela, etc.)
+- Matching portrait for each author
+- Smooth fade transitions
+- "Seeking wisdom..." loading state
+- Copy quote to clipboard button
+- Fully responsive (works great on mobile)
+
+## Technologies
+- HTML5
+- CSS3 (custom animations, glassmorphism-inspired design, pseudo-elements)
+- Vanilla JavaScript (DOM manipulation, event handling, array randomization)
+
+## Live Demo
+[View Live](wisdom-of-the-ancients.netlify.app)
+
+## What I Learned
+- Advanced CSS animations and timing with `setTimeout`
+- Centering overlays with absolute positioning + transform
+- Building a rich data-driven UI with arrays of objects
+- Making a visually cohesive ancient-themed interface
+- Improving user experience with loading states and copy functionality
+
+---
+
+**Part of my 100 Days of Code journey** — Building clean, interactive web experiences with HTML, CSS & JavaScript.
+
