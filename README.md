@@ -35,7 +35,7 @@ A beautiful interactive quote generator with an ancient temple aesthetic.
 - Vanilla JavaScript (DOM manipulation, event handling, array randomization)
 
 ## Live Demo
-[View Live](wisdom-of-the-ancients.netlify.app)
+[View Live](https://abz-v0.github.io/abraham-web-projects/day-14-wisdom-of-the-ancients/)
 
 ## What I Learned
 - Advanced CSS animations and timing with `setTimeout`
